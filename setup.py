@@ -14,7 +14,7 @@ def install_required():
   return [line for line in open('requirements.txt')]
 
 setuptools.setup(
-    name="epyk-engine",
+    name="epyk-flask",
     author="epykure",
     version="1.00.00",
     author_email="smith.pyotr@gmail.com",
@@ -25,7 +25,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=install_required(),
     # package_data={'epyk': [os.path.join('static', 'images', '*'), os.path.join('static, 'images', 'logo', '*')]},
-    entry_points={"console_scripts": ["epyk-engine = epyk_server.system.cli.command_line_fncs:main"]},
+    # entry_points={"console_scripts": ["epyk-engine = epyk_server.system.cli.command_line_fncs:main"]},
     python_requires=">=2.7",
     classifiers=[
         "Programming Language :: Python :: 3",
